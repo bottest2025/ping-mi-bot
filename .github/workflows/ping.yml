@@ -1,0 +1,12 @@
+name: Ping mi bot
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Cada 5 minutos
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hacer ping a mi bot
+        run: curl https://d84c60c6-f3c8-495f-9422-5361e8a1862b-00-83i7kcaspqrb.worf.replit.dev/
