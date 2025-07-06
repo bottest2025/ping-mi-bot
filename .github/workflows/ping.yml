@@ -1,8 +1,9 @@
 name: Ping mi bot
 
 on:
+  workflow_dispatch:   # ← esto permite ejecutar el workflow manualmente
   schedule:
-    - cron: '*/5 * * * *' # Cada 5 minutos
+    - cron: '*/5 * * * *'
 
 jobs:
   ping:
